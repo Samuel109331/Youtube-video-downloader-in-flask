@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #303838;
+        }
+        .form-container {
+            width: auto;
+            height: auto;
+            padding: 10px;
+            display: flex;
+
+        }
+        .form-container input {
+            font-size: 1.4rem;
+            padding: 10px;
+        }
+        .form-container button {
+            font-size: 1.4rem;
+            cursor: pointer;
+            background-color: #0f1a2b;
+            color: #FFF;
+            border: none;
+            padding: 10px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube video downloader</title>
+</head>
+<body>
+    <div class="form-container">
+        <form action="/download" method="post">
+            <input type="url" name="video_url" placeholder="Enter youtube video url"  required>
+            <button type="submit">Get download links</button>
+        </form>
+    </div>
+</body>
+</html>
